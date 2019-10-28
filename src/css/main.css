@@ -40,7 +40,7 @@ nav .logo {
   filter: hue-rotate(70deg);
   background-size: cover;
   background-position: center;
-  height: 250px;
+  height: 350px;
 }
 .welcome h1 {
   display: flex;
@@ -50,8 +50,10 @@ nav .logo {
 }
 
 .collection {
-  height: 400px;
+  overflow: hidden;
+  height: 120px;
   display: flex;
+  width: 100%;
 }
 .collection .btn-collec {
   transform: rotate(-3deg);
@@ -76,6 +78,34 @@ nav .logo {
 }
 .btn-more img {
   margin-left: 1em;
+}
+.collec-scroll {
+  height: auto;
+  overflow: auto;
+  white-space: nowrap;
+  background-color: rgb(255, 255, 255);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.collec-scroll::-webkit-scrollbar {
+  display: none;
+}
+.collec-cart {
+  display: inline-block;
+  width: 500px;
+  height: 650px;
+  background-color: rgb(224, 222, 222);
+  margin: 4em;
+}
+
+.cart-image {
+  width: 450px;
+  height: 450px;
+  margin: 1em auto;
+  background-image: url("/src/assets/twoBags.jpeg");
+  filter: hue-rotate(120deg);
+  background-size: cover;
+  background-position: center;
 }
 /** 
 green #4aed51 
