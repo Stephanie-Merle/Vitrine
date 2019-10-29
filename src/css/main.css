@@ -3,6 +3,7 @@
 body {
   font-family: "Indie Flower", cursive, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  color: #50250c;
 }
 
 header {
@@ -12,7 +13,7 @@ header {
 }
 nav {
   display: flex;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   flex: auto;
 }
 header * {
@@ -31,7 +32,9 @@ nav span {
   margin-left: auto;
 }
 header h1 {
-  color: #1ad123;
+  color: #50250c;
+  text-shadow: 3px 3px 3px #f4ca5c, 3px 3px 5px #f4ca5c, 3px 3px 15px #f4ca5c,
+    3px 3px 18px #f4ca5c;
   text-decoration: none;
   font-size: 1.7rem;
   margin-left: 1em;
@@ -40,17 +43,19 @@ header h1 {
   cursor: pointer;
   text-transform: uppercase;
 }
-.welcome {
+.photo-section {
   display: flex;
-  background-image: url("/src/assets/twoBags.jpeg");
-  filter: hue-rotate(70deg);
   background-size: cover;
   background-position: center;
   height: 60vh;
 }
+.welcome {
+  background-image: url("/src/assets/brand");
+}
 .welcome p {
   display: flex;
-  text-shadow: 0px 0px 5px #050505dc;
+  text-shadow: 3px 3px 3px #50250c, 3px 3px 5px #50250c, 3px 3px 10px #50250c,
+    3px 3px 16px #50250c, 3px 3px 28px #50250c;
   font-size: 7vmin;
   justify-items: center;
   margin: auto;
@@ -64,7 +69,7 @@ header h1 {
   width: 100%;
 }
 .btn-collec {
-  transform: rotate(-3deg);
+  transform: rotate(-5deg);
   box-shadow: none;
   height: 3rem;
   width: 15vw;
@@ -73,19 +78,21 @@ header h1 {
   margin-top: 2em;
   margin-left: 2em;
   border-radius: 0.8em;
-  background-color: #b1f0a8;
+  background-color: #f4ca5c;
   font-size: 1.4rem;
 }
 .collection .btn-more {
-  font-size: 1em;
+  font-size: 1.5rem;
   border: none;
   background: none;
   margin: 2.5em 2em auto auto;
-  align-self: flex-start;
+  align-self: center;
   justify-content: flex-end;
 }
 .btn-more img {
   margin-left: 1em;
+  margin-bottom: 0.27em;
+  color: #50250c;
 }
 .collec-scroll {
   height: auto;
@@ -111,7 +118,7 @@ header h1 {
 .collec-cart p {
   margin-top: 1.5em;
   font-size: 1.3rem;
-  text-decoration: underline 2px #50aaff;
+  text-decoration: underline 3px #f4ca5c;
 }
 /* to automate with JS to go tho server data  */
 .cart-image {
@@ -156,23 +163,23 @@ span .count {
   right: 0.5rem;
   height: 30px;
   width: 30px;
-  background-color: chartreuse;
+  background-color: #f4ca5c;
   border: 1px solid black;
   z-index: 100;
   border-radius: 50%;
 }
 #products {
   position: relative;
-  background: #1599579d; /* fallback for old browsers */
+  background: #c0bbba; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #1557999d,
-    #1599579d
+    #5a5959,
+    #c0bbba
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #1557999d,
-    #1599579d
+    #5a5959,
+    #c0bbba
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   height: auto;
@@ -192,7 +199,8 @@ span .count {
   max-width: 228px;
   min-height: 145px;
   max-height: 228px;
-  background-color: #6fba9e;
+  color: white;
+  background-color: #c0bbba;
   border: 10px solid white;
   border-radius: 50%;
   top: -9vw;
@@ -200,7 +208,7 @@ span .count {
   z-index: 100;
   text-align: center;
   font-size: 1.8em;
-  padding-top: 6vw;
+  padding-top: 5.5vw;
 }
 .product-cart {
   display: flex;
@@ -208,17 +216,17 @@ span .count {
   align-items: center;
   flex-wrap: wrap;
   margin: 2em auto;
-  background-color: #e3e3e3;
+  background-color: #e5e5e5;
   border-radius: 0.5em;
   width: 45%;
   height: 45vw;
   text-align: center;
   justify-content: space-around;
   font-size: 1.5rem;
-  border: 10px solid rgba(255, 255, 255, 0.219);
 }
 .product-cart p {
   margin: auto 0.3em;
+  padding: auto;
 }
 .product-cart:hover .cart-product {
   width: 100%;
@@ -249,11 +257,9 @@ span .count {
 .product-4 {
   background-image: url("/src/assets/collection/front/classic-bag-green.jpg");
 }
+
 .product-5 {
-  background-image: url("/src/assets/collection/front/braided-bag-orange.jpg");
-}
-.product-6 {
-  background-image: url("/src/assets/collection/front/classic-bag-green.jpg");
+  background-image: url("/src/assets/collection/front/classic-bag-red.jpg");
 }
 .colors {
   height: 20px;
@@ -262,43 +268,133 @@ span .count {
 }
 .brown {
   background-color: #a15927;
-  border: 2px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
 }
 .black {
   background-color: #111110;
-  border: 2px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
 }
 .lightpink {
   background-color: #dab3aa;
-  border: 2px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
 }
 .green {
   background-color: #193135;
-  border: 2px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
 }
 .orange {
-  background-color: #ac480a;
-  border: 2px solid rgb(255, 255, 255);
+  background-color: #d08706;
+  border: 3px solid rgb(255, 255, 255);
 }
+.darkred {
+  background-color: #571119;
+  border: 3px solid rgb(255, 255, 255);
+}
+
 .btn-cart {
-  min-height: 40px;
-  min-width: 40px;
   border-radius: 0.2em;
+  border: 2px solid #50250c;
+  background-color: #e5e5e5;
+  color: #50250c;
+  transition-duration: 0.7s;
+}
+.btn-buy {
+  min-height: 40px;
+  min-width: 60px;
   font-size: 1rem;
   padding: 4em auto;
   font-weight: 500;
-  border: 2px solid rgb(41, 40, 40);
-  background-color: rgb(65, 64, 64);
-  color: #50aaff;
-  transition-duration: 0.7s;
+  margin: auto 1em;
 }
 .btn-cart:hover {
-  background-color: #50aaff;
+  background-color: #f4ca5c;
   color: #070707;
   transition-duration: 0.7s;
 }
+.btn-browse {
+  font-size: 1.8rem;
+  margin: 1em auto 2.5em auto;
+  padding: 0.3em 0.5em;
+}
+.philo {
+  background-image: url("/src/assets/office");
+  background-blend-mode: saturation;
+  color: black;
+  font-size: 3rem;
+}
+.philo p {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.philo div {
+  width: 500px;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.65);
+  padding: 1em 1em;
+  margin: auto;
+  border-radius: 0.5em;
+}
+.btn-read {
+  font-size: 1.8rem;
+  margin: 0.5em auto;
+  padding: 0.1em 0.5em;
+}
+.news {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2em;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+  flex-direction: row-reverse;
+}
+.wrapping {
+  flex-wrap: wrap;
+  height: 200px;
+  align-self: center;
+  margin: 5em auto;
+}
+.email {
+  color: black;
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+.news input {
+  height: 80px;
+  border: 2px solid black;
+  padding: 1em;
+}
+.news svg {
+  height: 80px;
+  width: 120px;
+  padding: 0.3em;
+}
+footer {
+  display: flex;
+  margin: auto;
+  padding: 0.8em 2em;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-color: #f4ca5c;
+  text-align: center;
+  height: auto;
+}
+footer span {
+  justify-content: flex-end;
+  margin-left: auto;
+}
 /** 
-green #4aed51 
-blue #50aaff
-
+YELLOW #F4CA5C
+LIGHT BROWN #A78163
+BROWN #50250C 
+LIGHT BEIGE #F8F0DE
+BEIGE #DFD0BF
 */

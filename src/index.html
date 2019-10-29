@@ -11,14 +11,15 @@
 
   <body>
     <header>
-      <h1>BAGS STYLE</h1>
+      <h1>TRENDY BAGS</h1>
       <nav>
-        <img src="/src/assets/mode.svg" alt="switch mode" />
+        <!-- <img src="/src/assets/mode.svg" alt="switch mode" /> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#50250c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line></svg>
         <span>
           <ul>
             <li><a href="#collection">Collection</a></li>
             <li><a href="#products">Products</a></li>
-            <li><a href="#collection">Philosophy</a></li>
+            <li><a href="#philo">Philosophy</a></li>
           </ul>
           <div class="cart">
             <div class="count">2</div>
@@ -28,7 +29,7 @@
               height="60"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#000000"
+              stroke="#50250c"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -44,7 +45,7 @@
       </nav>
     </header>
 
-    <section class="welcome">
+    <section class="photo-section welcome">
       <p>Discover our bag collection</p>
     </section>
     <section id="collection">
@@ -88,7 +89,7 @@
     </section>
 
     <section id="products">
-      <div class="sticker">Our last collection</div>
+      <div class="sticker">Summer collection</div>
       <button class="btn-collec" href="/">Products</button>
       <container class="product-list">
         <div class="product-cart">
@@ -96,10 +97,10 @@
           <p>colors :</p>
           <div class="colors brown"></div>
           <div class="colors lightpink"></div>
-          <div class="colors"></div>
+          <div class="colors orange"></div>
           <div class="colors"></div>
           <p>18.00 $</p>
-          <button class="btn-cart">Add To Cart</button>
+          <button class="btn-cart btn-buy">SHOP IT</button>
           <div class="cart-product product-1"></div>
         </div>
         <div class="product-cart">
@@ -110,18 +111,18 @@
           <div class="colors"></div>
           <div class="colors"></div>
           <p>35.00 $</p>
-          <button class="btn-cart">Add To Cart</button>
+          <button class="btn-cart btn-buy">SHOP IT</button>
           <div class="cart-product product-2"></div>
         </div>
         <div class="product-cart">
           <p>Emma</p>
           <p>colors :</p>
           <div class="colors lightpink"></div>
-          <div class="colors brown"></div>
+          <div class="colors orange"></div>
           <div class="colors"></div>
           <div class="colors"></div>
           <p>26.00 $</p>
-          <button class="btn-cart">Add To Cart</button>
+          <button class="btn-cart btn-buy">SHOP IT</button>
           <div class="cart-product product-3"></div>
         </div>
         <div class="product-cart">
@@ -132,25 +133,30 @@
           <div class="colors"></div>
           <div class="colors "></div>
           <p>15.00 $</p>
-          <button class="btn-cart">Add To Cart</button>
+          <button class="btn-cart btn-buy">SHOP IT</button>
           <div class="cart-product product-4"></div>
         </div>
-
-        <div class="product-cart">
-          <p>Olivia</p>
-          <p>colors :</p>
-          <div class="colors orange"></div>
-          <div class="colors"></div>
-          <div class="colors"></div>
-          <div class="colors "></div>
-          <p>15.00 $</p>
-          <button class="btn-cart">Add To Cart</button>
-          <div class="cart-product product-5"></div>
-        </div>
-      
+        <button class="btn-cart btn-browse">BROWSE ALL PRODUCTS</button>
         </div>
       </container>
     </section>
+    <section id="philo" class="photo-section philo">
+      <div>
+<p>We aim to provide the best quality of bags at a fair cost.</p> 
+<p>Check out our new collection and order from us today.</p>
+<button class="btn-cart btn-read">READ MORE</button>
+      </div>
+    </section>
+    <section class="photo-section wrapping">
+        <p class="email">Sign up for our newsletter and stay informed</p>
+      <div class="news">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+              <input type="text" placeholder="@ Your email"> 
+      </div>
+
+    </section>
+    <footer>Made with love <span>2019</span></footer>
     <script src="./js/main.js"></script>
   </body>
 </html>
