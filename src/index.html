@@ -10,24 +10,44 @@
   </head>
 
   <body>
-    <nav>
-      <a href="/" class="logo">BAGS STYLE</a>
-      <img src="/src/assets/mode.svg" alt="switch mode" />
-      <span>
-        <ul>
-          <li>Collection</li>
-          <li>Products</li>
-          <li>Philosophy</li>
-          <li>
-            <img src="/src/assets/basket.svg" alt="shopping basket" />
-          </li>
-        </ul>
-      </span>
-    </nav>
+    <header>
+      <h1>BAGS STYLE</h1>
+      <nav>
+        <img src="/src/assets/mode.svg" alt="switch mode" />
+        <span>
+          <ul>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#collection">Products</a></li>
+            <li><a href="#collection">Philosophy</a></li>
+          </ul>
+          <div class="cart">
+            <div class="count">2</div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="60"
+              height="60"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="10" cy="20.5" r="1" />
+              <circle cx="18" cy="20.5" r="1" />
+              <path
+                d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"
+              />
+            </svg>
+          </div>
+        </span>
+      </nav>
+    </header>
+
     <section class="welcome">
-      <h1>Discover our bag collection</h1>
+      <p>Discover our bag collection</p>
     </section>
-    <section>
+    <section id="collection">
       <div class="collection">
         <button class="btn-collec" href="/">Collection</button>
         <button class="btn-more" href="/">
@@ -40,34 +60,29 @@
 
       <div class="collec-scroll">
         <div class="collec-cart">
-          <div class="cart-image"></div>
+          <div class="cart-image cart-image-1"></div>
           <h4>My Model</h4>
-          <h5>Explore</h5>
+          <p>Explore</p>
         </div>
         <div class="collec-cart">
-          <div class="cart-image"></div>
+          <div class="cart-image cart-image-2"></div>
           <h4>My Model</h4>
-          <h5>Explore</h5>
+          <p>Explore</p>
         </div>
         <div class="collec-cart">
-          <div class="cart-image"></div>
+          <div class="cart-image cart-image-3"></div>
           <h4>My Model</h4>
-          <h5>Explore</h5>
+          <p>Explore</p>
         </div>
         <div class="collec-cart">
-          <div class="cart-image"></div>
+          <div class="cart-image cart-image-4"></div>
           <h4>My Model</h4>
-          <h5>Explore</h5>
+          <p>Explore</p>
         </div>
         <div class="collec-cart">
-          <div class="cart-image"></div>
+          <div class="cart-image cart-image-5"></div>
           <h4>My Model</h4>
-          <h5>Explore</h5>
-        </div>
-        <div class="collec-cart">
-          <div class="cart-image"></div>
-          <h4>My Model</h4>
-          <h5>Explore</h5>
+          <p>Explore</p>
         </div>
       </div>
     </section>
