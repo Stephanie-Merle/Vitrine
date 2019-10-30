@@ -1,4 +1,4 @@
-# Toggle Menu
+# VITRINE PROJECT
 
 Responsive product showcase webpage made with HTML / CSS & JS.
 
