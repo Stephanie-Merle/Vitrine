@@ -7,6 +7,25 @@ body {
   overflow-x: hidden;
   min-width: 400px;
 }
+.dark {
+  background-color: #202020;
+  color: #bcb7b6;
+}
+.dark li {
+  background-color: none;
+  box-shadow: none;
+}
+.dark h1 {
+  text-shadow: none;
+  font-weight: 800;
+}
+.dark #sticker {
+  border: 10px solid #202020;
+}
+.darknav {
+  background-color: #202020;
+  color: #5e5c5c;
+}
 
 header {
   display: flex;
@@ -114,7 +133,7 @@ header h1 {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   -ms-overflow-style: none;
   scrollbar-width: none;
   margin-bottom: 2em;
@@ -209,8 +228,7 @@ span .count {
   display: flex;
   flex-wrap: wrap;
 }
-.sticker {
-  /* Should disappear if too small viewport */
+#sticker {
   position: absolute;
   height: 20vw;
   width: 20vw;
