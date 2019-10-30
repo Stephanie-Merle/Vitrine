@@ -9,6 +9,6 @@ Responsive product showcase webpage made with HTML / CSS & JS.
 ## Preview
 
 <div style="display:flex; margin:auto">
-<img src="./vitrine_desktop.jpg" width="80%" height="80%" title="wide-screen">
-<img src="./vitrine_mobile.jpg.jpg" width="70%" height="70%" title="wide-screen">
+<img src="./Readme/vitrine_desktop.jpg" width="80%" height="80%" title="wide-screen">
+<img src="./Readme/vitrine_mobile.jpg" width="70%" height="70%" title="wide-screen">
 </div>
