@@ -1,5 +1,6 @@
 console.log("it works");
-const mode = document.querySelector("#mode");
-mode.addEventListener("click", () => {
-  myTarget.classList.toggle("change");
+const hamburger = document.querySelector("#hamburger");
+const drawer = document.querySelector("#myDrawer");
+hamburger.addEventListener("click", () => {
+  drawer.classList.toggle("menu");
 });
