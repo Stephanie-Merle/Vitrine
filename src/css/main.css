@@ -4,10 +4,10 @@ body {
   font-family: "Indie Flower", cursive, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   color: #50250c;
+  overflow-x: hidden;
 }
 
 header {
-  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
 }
@@ -25,6 +25,11 @@ header * {
 nav span ul {
   display: flex;
   flex-direction: row;
+}
+nav li:hover {
+  background-color: #f8f0de;
+  border-radius: 45%;
+  box-shadow: 3px 3px 3px #f8f0de;
 }
 
 nav span {
@@ -81,6 +86,7 @@ header h1 {
   background-color: #f4ca5c;
   font-size: 1.4rem;
 }
+
 .collection .btn-more {
   font-size: 1.5rem;
   border: none;
@@ -88,6 +94,12 @@ header h1 {
   margin: 2.5em 2em auto auto;
   align-self: center;
   justify-content: flex-end;
+  cursor: pointer;
+}
+.collection .btn-more:hover {
+  background-color: #f8f0de;
+  border-radius: 20%;
+  box-shadow: 3px 3px 3px #f8f0de;
 }
 .btn-more img {
   margin-left: 1em;
@@ -96,7 +108,8 @@ header h1 {
 }
 .collec-scroll {
   height: auto;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   white-space: nowrap;
   background-color: rgb(255, 255, 255);
   -ms-overflow-style: none;
@@ -118,6 +131,9 @@ header h1 {
 .collec-cart p {
   margin-top: 1.5em;
   font-size: 1.3rem;
+  text-decoration: underline 3px #dfd0bf;
+}
+.collec-cart p:hover {
   text-decoration: underline 3px #f4ca5c;
 }
 /* to automate with JS to go tho server data  */
@@ -226,7 +242,6 @@ span .count {
 }
 .product-cart p {
   margin: auto 0.3em;
-  padding: auto;
 }
 .product-cart:hover .cart-product {
   width: 100%;
@@ -238,7 +253,6 @@ span .count {
 
 .cart-product {
   display: flex;
-  margin: auto;
   width: 90%;
   height: 80%;
   background-position: center;
@@ -297,12 +311,13 @@ span .count {
   background-color: #e5e5e5;
   color: #50250c;
   transition-duration: 0.7s;
+  cursor: pointer;
 }
+
 .btn-buy {
   min-height: 40px;
   min-width: 60px;
   font-size: 1rem;
-  padding: 4em auto;
   font-weight: 500;
   margin: auto 1em;
 }
@@ -320,7 +335,6 @@ span .count {
   background-image: url("/src/assets/office");
   background-blend-mode: saturation;
   color: black;
-  font-size: 3rem;
 }
 .philo p {
   font-size: 2.5rem;
@@ -376,6 +390,10 @@ span .count {
   width: 120px;
   padding: 0.3em;
 }
+.news svg:hover {
+  fill: orange;
+  cursor: pointer;
+}
 footer {
   display: flex;
   margin: auto;
@@ -390,6 +408,65 @@ footer {
 footer span {
   justify-content: flex-end;
   margin-left: auto;
+}
+nav svg:hover {
+  cursor: pointer;
+  background-color: #f8f0de;
+  box-shadow: 3px 3px 3px #f8f0de;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 770px) {
+  span ul,
+  .cart {
+    display: none;
+    visibility: hidden;
+  }
+  .philo p {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .collec-cart {
+    font-size: 1rem;
+  }
+  .product-cart {
+    width: 85%;
+    height: 95vw;
+    font-size: 1rem;
+  }
+  .news {
+    flex-direction: column-reverse;
+    margin: 0.5em auto;
+    align-items: center;
+  }
+  .news input {
+    width: 80%;
+  }
+  .btn-browse {
+    font-size: 1.5rem;
+    margin: 1em auto 2.5em auto;
+    padding: 0.3em 0.5em;
+  }
+  .btn-read {
+    font-size: 1.5rem;
+  }
+  .welcome {
+    height: 45vh;
+  }
+  header h1 {
+    font-size: 1.3rem;
+    flex-shrink: 0;
+  }
+  nav svg {
+    width: 40px;
+    height: 40px;
+  }
+  .collec-cart {
+    width: 70vw;
+    height: 80vw;
+    margin: 1em;
+    font-size: 2rem;
+  }
 }
 /** 
 YELLOW #F4CA5C
