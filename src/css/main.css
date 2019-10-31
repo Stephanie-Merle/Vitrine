@@ -8,25 +8,46 @@ body {
   min-width: 400px;
 }
 .dark {
-  background-color: #202020;
-  color: #bcb7b6;
+  background-color: #444242;
+  color: #e5e5e5;
 }
-.dark li {
-  background-color: none;
+.darknav li {
+  background-color: #444242;
   box-shadow: none;
+}
+.dark #seemore:hover {
+  background-color: #444242;
 }
 .dark h1 {
   text-shadow: none;
   font-weight: 800;
 }
 .dark #sticker {
-  border: 10px solid #202020;
+  border: 10px solid #444242;
 }
 .darknav {
-  background-color: #202020;
-  color: #5e5c5c;
+  background-color: #444242;
+  color: #e5e5e5;
+}
+.darknav svg {
+  filter: brightness(49);
+}
+.darknav span .count {
+  color: #50250c;
+  border: 2px solid white;
 }
 
+.darknav li:hover {
+  background-color: #444242;
+}
+.darknav svg:hover {
+  filter: brightness(5);
+  background-color: #444242;
+  box-shadow: 3px 3px 3px #444242;
+}
+.dark footer {
+  color: #50250c;
+}
 header {
   display: flex;
   flex-direction: row;
@@ -53,7 +74,6 @@ nav li:hover {
   border-radius: 45%;
   box-shadow: 3px 3px 3px #f8f0de;
 }
-
 nav span {
   justify-content: flex-end;
   margin-left: auto;
@@ -88,7 +108,6 @@ header h1 {
   margin: auto;
   color: white;
 }
-
 .collection {
   overflow: hidden;
   height: 120px;
@@ -108,7 +127,6 @@ header h1 {
   background-color: #f4ca5c;
   font-size: 1.4rem;
 }
-
 .collection .btn-more {
   font-size: 1.5rem;
   border: none;
@@ -123,17 +141,14 @@ header h1 {
   border-radius: 20%;
   box-shadow: 3px 3px 3px #f8f0de;
 }
-.btn-more img {
+.btn-more svg {
   margin-left: 1em;
-  margin-bottom: 0.27em;
-  color: #50250c;
 }
 .collec-scroll {
   height: auto;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  /* background-color: rgb(255, 255, 255); */
   -ms-overflow-style: none;
   scrollbar-width: none;
   margin-bottom: 2em;
@@ -158,31 +173,20 @@ header h1 {
 .collec-cart p:hover {
   text-decoration: underline 3px #f4ca5c;
 }
-/* to automate with JS to go tho server data  */
 .cart-image {
   width: 80%;
   height: 80%;
   margin: 0.7em auto;
-  background-size: cover;
-  background-position: bottom;
-  border-radius: 0.5em;
-  border: 10px solid rgba(255, 255, 255, 0.685);
 }
-
-.cart-image-1 {
-  background-image: url("/src/assets/collection/bandouliere-back-to-school.jpg");
+.cart-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.7em;
+  border: 10px solid rgba(192, 189, 189, 0.493);
 }
-.cart-image-2 {
-  background-image: url("/src/assets/collection/bandouliere-poignee-metal-et-bi-matiere.jpg");
-}
-.cart-image-3 {
-  background-image: url("/src/assets/collection/cabas-bi-matiere-poche-devant-avec-foulard.jpg");
-}
-.cart-image-4 {
-  background-image: url("/src/assets/collection/sac-cabas-detail-tresse.jpg");
-}
-.cart-image-5 {
-  background-image: url("/src/assets/collection/shopper-bi-matiere-details-clous.jpg");
+.cart-image img:hover {
+  border: 10px solid rgba(219, 217, 217, 0.698);
 }
 
 span .cart {
@@ -219,7 +223,6 @@ span .count {
     #5a5959,
     #c0bbba
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   height: auto;
 }
 .product-list {
@@ -263,38 +266,28 @@ span .count {
 }
 .product-cart p {
   margin: auto 0.3em;
-}
-.product-cart:hover .cart-product {
-  width: 100%;
-  height: 80%;
-  background-position: bottom;
-  transition-duration: 1s;
+  overflow: hidden;
 }
 
 .cart-product {
   display: flex;
+  justify-content: center;
   width: 90%;
   height: 80%;
-  background-position: center;
-  background-size: cover;
+  overflow: hidden;
+}
+.cart-product img {
+  height: 100%;
+  height: 100%;
+  object-fit: cover;
   transition-duration: 1s;
 }
-.product-1 {
-  background-image: url("/src/assets/collection/front/string-bag-brown.jpg");
-}
-.product-2 {
-  background-image: url("/src/assets/collection/front/ring-bag-black.jpg");
-}
-.product-3 {
-  background-image: url("/src/assets/collection/front/fancy-bag-pink.jpg");
-}
-.product-4 {
-  background-image: url("/src/assets/collection/front/classic-bag-green.jpg");
+.cart-product img:hover {
+  transform: scale(1.1);
+  object-fit: cover;
+  transition-duration: 1s;
 }
 
-.product-5 {
-  background-image: url("/src/assets/collection/front/classic-bag-red.jpg");
-}
 .colors {
   height: 20px;
   width: 20px;
@@ -302,29 +295,38 @@ span .count {
 }
 .brown {
   background-color: #a15927;
-  border: 3px solid rgb(255, 255, 255);
 }
 .black {
   background-color: #111110;
-  border: 3px solid rgb(255, 255, 255);
 }
 .lightpink {
   background-color: #dab3aa;
-  border: 3px solid rgb(255, 255, 255);
 }
 .green {
   background-color: #193135;
-  border: 3px solid rgb(255, 255, 255);
 }
 .orange {
   background-color: #d08706;
-  border: 3px solid rgb(255, 255, 255);
 }
 .darkred {
   background-color: #571119;
+}
+.brown,
+.black,
+.lightpink,
+.green,
+.orange,
+.darkred {
   border: 3px solid rgb(255, 255, 255);
 }
-
+.brown:hover,
+.black:hover,
+.lightpink:hover,
+.green:hover,
+.orange:hover,
+.darkred:hover {
+  border: 3px solid #444242;
+}
 .btn-cart {
   border-radius: 0.2em;
   border: 2px solid #50250c;
@@ -333,7 +335,6 @@ span .count {
   transition-duration: 0.7s;
   cursor: pointer;
 }
-
 .btn-buy {
   min-height: 40px;
   min-width: 60px;
@@ -459,7 +460,6 @@ nav svg:hover {
 .menu {
   top: 0px;
 }
-
 @media screen and (max-width: 770px) {
   span ul,
   .cart {
@@ -472,6 +472,9 @@ nav svg:hover {
   }
   .collec-cart {
     font-size: 1rem;
+    width: 70vw;
+    height: 80vw;
+    margin: 2em;
   }
   .product-cart {
     width: 85%;
@@ -504,12 +507,6 @@ nav svg:hover {
   nav svg {
     width: 45px;
     height: 45px;
-  }
-  .collec-cart {
-    width: 70vw;
-    height: 80vw;
-    margin: 1em;
-    font-size: 2rem;
   }
   #hamburger {
     display: block;
