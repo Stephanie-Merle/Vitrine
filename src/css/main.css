@@ -5,7 +5,7 @@ body {
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   color: #50250c;
   overflow-x: hidden;
-  min-width: 400px;
+  min-width: 360px;
 }
 .dark {
   background-color: #444242;
@@ -510,6 +510,12 @@ nav svg:hover {
   }
   #hamburger {
     display: block;
+  }
+  input::placeholder {
+    font-size: 0.5em;
+  }
+  .news input {
+    height: 50px;
   }
 }
 /** 
